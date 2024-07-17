@@ -1,0 +1,9 @@
+Feature: Update User Details
+
+@execute
+Scenario: Update an existing passenger details
+  Given url baseURL
+  And path 'users'
+  And request read('AirlinePayload.json')
+  When method PUT
+  Then status 200

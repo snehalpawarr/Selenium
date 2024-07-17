@@ -1,0 +1,18 @@
+package com.maveric.parabank.pagebeans;
+import java.util.List;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import com.maveric.parabank.stepdeff.Select;
+
+public class AccountCreationPageBeans {
+	
+	@FindBy( how = How.XPATH,  xpath = "//select[@id='type']")
+	private WebElement Dropdown;
+	
+	Select slct = new Select(Dropdown);
+	
+
+
+}

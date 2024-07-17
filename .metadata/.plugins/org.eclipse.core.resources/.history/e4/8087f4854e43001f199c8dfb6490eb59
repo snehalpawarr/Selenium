@@ -1,0 +1,9 @@
+Feature: Open New Account
+
+Scenario: Successfull account creation
+Given User is loged in to ParaBank homepage
+    When User navigate to the open new account page
+    And  
+    And  
+    Then 
+ 

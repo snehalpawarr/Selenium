@@ -1,0 +1,190 @@
+package com.maveric.restassureproj.api;
+
+import static org.hamcrest.CoreMatchers.equalToObject;
+
+import java.util.HashMap;
+
+import org.apache.http.HttpStatus;
+import org.hamcrest.CoreMatchers;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+
+public class RestApiTest {
+	
+//*******************************   GET   ***********************************************
+	
+	@BeforeClass
+	public static void setUpEnv() {
+		RestAssured.baseURI="https://reqres.in/";
+	}
+		// GET LIST USERS
+		@Test(testName ="Get all User details")
+		public  void test1() throws JsonMappingException, JsonProcessingException {
+			
+			Response response= RestAssured.get("/api/users?page=2");
+			Assert.assertEquals(response.getStatusCode(),200);
+			String  responseBody=RestAssured.get("/api/users?page=2").then().assertThat().statusCode(200).and().log().body().toString();
+			System.out.println("Response body is: " +responseBody);
+			
+		}
+		@Test(testName ="Get single user details")
+		public  void test2() throws JsonMappingException, JsonProcessingException {
+			Response response= RestAssured.get("/api/users/2");
+			Assert.assertEquals(response.getStatusCode(),200);
+			
+			String  responseBody=RestAssured.get("/api/users/2").then().assertThat().statusCode(200).and().log().body().toString();
+			System.out.println("Response body is: " +responseBody);
+			
+		}
+		
+		@Test(testName ="Get single user not found")
+		public  void test3() throws JsonMappingException, JsonProcessingException {
+			Response response= RestAssured.get("/api/users/23");
+			Assert.assertEquals(response.getStatusCode(),404);
+			
+			String  responseBody=RestAssured.get("/api/users/23").then().assertThat().statusCode(404).and().log().body().toString();
+			System.out.println("Response body is: " +responseBody);
+			
+		}
+		
+		@Test(testName ="Get all Resource details")
+		public  void test4() throws JsonMappingException, JsonProcessingException {
+			Response response= RestAssured.get("/api/unknown");
+			Assert.assertEquals(response.getStatusCode(),200);
+			
+			String  responseBody=RestAssured.get("/api/unknown").then().assertThat().statusCode(200).and().log().body().toString();
+			System.out.println("Response body is: " +responseBody);
+			
+		}
+		
+		@Test(testName ="Get single Resource details")
+		public  void test5() throws JsonMappingException, JsonProcessingException {
+			Response response= RestAssured.get("/api/unknown/2");
+			Assert.assertEquals(response.getStatusCode(),200);
+			
+			String  responseBody=RestAssured.get("/api/unknown/2").then().assertThat().statusCode(200).and().log().body().toString();
+			System.out.println("Response body is: " +responseBody);
+			
+		}
+		
+		@Test(testName ="Get single Resource not found")
+		public  void test6() throws JsonMappingException, JsonProcessingException {
+			Response response= RestAssured.get("/api/unknown/23");
+			Assert.assertEquals(response.getStatusCode(),404);
+			
+			String  responseBody=RestAssured.get("/api/unknown/23").then().assertThat().statusCode(404).and().log().body().toString();
+			System.out.println("Response body is: " +responseBody);
+			
+		}
+		
+		
+	//	@Test(testName ="Get delayed response")
+		public  void test7() throws JsonMappingException, JsonProcessingException {
+			
+			Response response= RestAssured.get("/api/users?delay=3");
+			Assert.assertEquals(response.getStatusCode(),200);
+			String  responseBody=RestAssured.get("/api/users?delay=3").then().assertThat().statusCode(200).and().log().body().toString();
+			System.out.println("Response body is: " +responseBody);
+			
+		}
+		
+//*******************************   POST   ***********************************************
+		
+		@Test(testName ="Add new user details")
+		
+		public void test8() {
+        	HashMap<String,String> payLoad = new HashMap<>();
+        	payLoad.put("name","morpheus");
+        	payLoad.put("job","leader");
+        
+        	
+        	 RestAssured.given()
+			.contentType(ContentType.JSON)
+			.body(payLoad)
+			.post("/api/users")
+			.then()
+			.assertThat()
+			.statusCode(HttpStatus.SC_CREATED);
+        }
+        
+		//@Ignore
+		@Test(testName ="PUT Request for Register-Successfull")
+
+		public void test9() {
+			HashMap<String,String> payLoad = new HashMap<>();
+			payLoad.put("email","eve.holt@reqres.in");
+			payLoad.put("password","pistol");
+	
+	
+			RestAssured.given()
+			.contentType(ContentType.JSON)
+			.body(payLoad)
+			.post("/api/register")
+			.then()
+			.assertThat()
+			.statusCode(HttpStatus.SC_CREATED);
+		}
+		
+		
+//**************************   PUT   *****************************
+		
+		@Test(testName ="Update new user details ")
+		
+			public void test10() {
+        		HashMap<String,String> payLoad = new HashMap<>();
+        		payLoad.put("name","morpheus");
+        		payLoad.put("job","leader");
+        
+	        	 RestAssured.given()
+				.contentType(ContentType.JSON)
+				.body(payLoad)
+				.put("/api/users/2")
+				.then()
+				.assertThat()
+				.statusCode(HttpStatus.SC_OK);
+	        }
+
+//**************************   PATCH   *****************************
+		@Test(testName ="patch  new user details ")
+		
+		public void test11() {
+    		HashMap<String,String> payLoad = new HashMap<>();
+    		payLoad.put("name","morpheus");
+    		payLoad.put("job","leader");
+    
+        	 RestAssured.given()
+			.contentType(ContentType.JSON)
+			.body(payLoad)
+			.patch("/api/users/2")
+			.then()
+			.assertThat()
+			.statusCode(HttpStatus.SC_OK);
+        	 
+        	 System.out.println("Patch end here ................");
+        }
+
+		//**************************   DELETE   *****************************	
+		
+		@Test(testName ="Delete user details")
+		 public void test12() {
+			 
+			
+		      
+		   Response response = RestAssured.given()
+		    		 .contentType(ContentType.JSON)
+		    		 .delete("/api/users/2");
+		  
+		     System.out.println("Deleted successfully ");
+		 
+		 }
+
+}

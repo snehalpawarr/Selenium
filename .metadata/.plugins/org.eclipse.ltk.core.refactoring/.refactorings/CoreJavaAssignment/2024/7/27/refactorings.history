@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;CoreJavaPkj.Print100Numbers&apos; to &apos;JavaLoops&apos;&#x0D;&#x0A;- Original project: &apos;CoreJavaAssignment&apos;&#x0D;&#x0A;- Original element: &apos;CoreJavaPkj.Print100Numbers&apos;&#x0D;&#x0A;- Renamed element: &apos;CoreJavaPkj.JavaLoops&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Print100Numbers&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;CoreJavaPkj{Print100Numbers.java[Print100Numbers" matchStrategy="1" name="JavaLoops" qualified="false" references="true" similarDeclarations="false" stamp="1719928467159" textual="false" version="1.0"/>
+</session>

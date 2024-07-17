@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-21T11:58:12 IST" name="Default suite" finished-at="2024-06-21T11:58:25 IST" duration-ms="13731">
+    <groups>
+    </groups>
+    <test started-at="2024-06-21T11:58:12 IST" name="Default test" finished-at="2024-06-21T11:58:25 IST" duration-ms="13731">
+      <class name="com.maveric.git.test.LoginTest">
+        <test-method is-config="true" signature="setUpTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:12 IST" name="setUpTestEnv" finished-at="2024-06-21T11:58:15 IST" duration-ms="2547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestEnv -->
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:15 IST" name="test1" data-provider="getInvalidUserNameOrInvalidPassword" finished-at="2024-06-21T11:58:15 IST" duration-ms="126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CorrectPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="TearDownTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:15 IST" name="TearDownTestEnv" finished-at="2024-06-21T11:58:15 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDownTestEnv -->
+        <test-method is-config="true" signature="setUpTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:15 IST" name="setUpTestEnv" finished-at="2024-06-21T11:58:18 IST" duration-ms="3261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestEnv -->
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:18 IST" name="test1" data-provider="getInvalidUserNameOrInvalidPassword" finished-at="2024-06-21T11:58:18 IST" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[snehald]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="TearDownTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:18 IST" name="TearDownTestEnv" finished-at="2024-06-21T11:58:19 IST" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDownTestEnv -->
+        <test-method is-config="true" signature="setUpTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:19 IST" name="setUpTestEnv" finished-at="2024-06-21T11:58:22 IST" duration-ms="2896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestEnv -->
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:22 IST" name="test1" data-provider="getInvalidUserNameOrInvalidPassword" finished-at="2024-06-21T11:58:22 IST" duration-ms="100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[paward]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz@432]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="TearDownTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:22 IST" name="TearDownTestEnv" finished-at="2024-06-21T11:58:22 IST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDownTestEnv -->
+        <test-method is-config="true" signature="setUpTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:22 IST" name="setUpTestEnv" finished-at="2024-06-21T11:58:25 IST" duration-ms="2511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestEnv -->
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:25 IST" name="test1" data-provider="getInvalidUserNameOrInvalidPassword" finished-at="2024-06-21T11:58:25 IST" duration-ms="117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sneha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pqr@321]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="TearDownTestEnv()[pri:0, instance:com.maveric.git.test.LoginTest@2c1b194a]" started-at="2024-06-21T11:58:25 IST" name="TearDownTestEnv" finished-at="2024-06-21T11:58:25 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDownTestEnv -->
+      </class> <!-- com.maveric.git.test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

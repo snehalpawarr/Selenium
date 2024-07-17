@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\snehald\Documents\GitTestNGDemo\src\test\java\com\maveric\git\test\TestDataProviderExcel.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.maveric.karate.project"/>
+			<item value="com.maveric.karate.proj"/>
+			<item value="com.maveric.restassureproj.api"/>
+			<item value="com.maveric.parabank.proj"/>
+			<item value="com.maveric.makemytrip.project"/>
+			<item value="com.maveric.project"/>
+			<item value="com.maveric.swaglabs.project"/>
+			<item value="com.maveric.bdddemo.GitApp"/>
+			<item value="com.maveric.bdddemo.git"/>
+			<item value="com.maveric.bdd.demo"/>
+			<item value="com.maveric.registration.demo"/>
+			<item value="com.maveric.git.test"/>
+		</list>
+		<list key="groupId">
+			<item value="com.maveric.karate"/>
+			<item value="com.maveric.restassureproj"/>
+			<item value="com.maveric.parabank"/>
+			<item value="com.maveric.makemytrip"/>
+			<item value="com.maveric.swaglabs"/>
+			<item value="com.maveric.bdddemo"/>
+			<item value="com.maveric.bdd"/>
+			<item value="com.maveric.registration"/>
+			<item value="com.maveric.git"/>
+		</list>
+		<list key="artifactId">
+			<item value="KarateProjectt"/>
+			<item value="KarateProject"/>
+			<item value="RestassureProject"/>
+			<item value="ParaBankProject"/>
+			<item value="MakeMyTripProj"/>
+			<item value="KarateDemo"/>
+			<item value="SwagLabsProject"/>
+			<item value="GitAppBDDDemo"/>
+			<item value="BDDGit"/>
+			<item value="BDDDemo"/>
+			<item value="RegistrationTestNG"/>
+			<item value="GitTestNGDemo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="com.intuit.karate"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="karate-archetype"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.4.1"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,25 @@
+Feature: Online Fake API-Airlines-Get
+ 
+@execute
+Scenario: Get all user details
+ 
+Given url baseURL
+And path 'users'
+And param page = 2
+When method GET
+Then status 200
+
+#@execute
+Scenario: Get specific airlines details by id
+Given url nonSecureBaseURL
+And path 'airlines/73dd5420-3bf9-48f3-a0b6-17cf7aa61b19'
+When method GET
+Then status 200
+#And match responseStatus == 200
+    And match response == {"_id":"73dd5420-3bf9-48f3-a0b6-17cf7aa61b19","name":"American Airlines","country":"United States","logo":"https://example.com/logos/american_airlines.png","slogan":"Going for great","head_quaters":"Fort Worth, Texas","website":"https://www.aa.com","established":"1930"}
+    #And match $.{"_id":"73dd5420-3bf9-48f3-a0b6-17cf7aa61b19","name":"American Airlines","country":"United States","logo":"https://example.com/logos/american_airlines.png","slogan":"Going for great","head_quaters":"Fort Worth, Texas","website":"https://www.aa.com","established":"1930"}
+   	#And match response.country == "United States"
+    #And match $.slogan == "Going for great"
+    #And match response.name contains "Ame"
+    #And print responseHeaders
+    #And print responseHeaders["Content-Type"][0]

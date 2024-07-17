@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"api\/users\/User_Delete[1:4]","start":1720699173848,"end":1720699175391,"title":"api\/users\/User_Delete[1:4] 17:29:33.848-17:29:35.391 Delete airline by ID"},{"id":2,"group":1,"content":"api\/users\/User_Get[1:4]","start":1720699176111,"end":1720699176201,"title":"api\/users\/User_Get[1:4] 17:29:36.111-17:29:36.201 Get all user details"},{"id":3,"group":1,"content":"api\/users\/User_Get[2:12]","start":1720699176215,"end":1720699176368,"title":"api\/users\/User_Get[2:12] 17:29:36.215-17:29:36.368 Get specific user details by id"},{"id":4,"group":1,"content":"api\/users\/User_Get[3:21]","start":1720699176377,"end":1720699177109,"title":"api\/users\/User_Get[3:21] 17:29:36.377-17:29:37.109 Get empty user details"},{"id":5,"group":1,"content":"api\/users\/User_Get[4:29]","start":1720699177123,"end":1720699180849,"title":"api\/users\/User_Get[4:29] 17:29:37.123-17:29:40.849 Get delaying user details"},{"id":6,"group":1,"content":"api\/users\/User_Get[5:38]","start":1720699180869,"end":1720699180940,"title":"api\/users\/User_Get[5:38] 17:29:40.869-17:29:40.940 Get List of resources"},{"id":7,"group":1,"content":"api\/users\/User_Get[6:46]","start":1720699180960,"end":1720699181029,"title":"api\/users\/User_Get[6:46] 17:29:40.960-17:29:41.029 Get single resource"},{"id":8,"group":1,"content":"api\/users\/User_Get[7:55]","start":1720699181044,"end":1720699181778,"title":"api\/users\/User_Get[7:55] 17:29:41.044-17:29:41.778 Get single resource(Not Found)"},{"id":9,"group":1,"content":"api\/users\/User_Patch[1:4]","start":1720699182030,"end":1720699182734,"title":"api\/users\/User_Patch[1:4] 17:29:42.030-17:29:42.734 Update an existing passenger details"},{"id":10,"group":1,"content":"api\/users\/User_Post[1:4]","start":1720699182848,"end":1720699183517,"title":"api\/users\/User_Post[1:4] 17:29:42.848-17:29:43.517 Add User details"},{"id":11,"group":1,"content":"api\/users\/User_Post[2:18]","start":1720699183529,"end":1720699184154,"title":"api\/users\/User_Post[2:18] 17:29:43.529-17:29:44.154 Post method for Register-Successfull"},{"id":12,"group":1,"content":"api\/users\/User_Post[3:26]","start":1720699184169,"end":1720699184858,"title":"api\/users\/User_Post[3:26] 17:29:44.169-17:29:44.858 Post method for Register-Unsuccessfull","className":"failed"},{"id":13,"group":1,"content":"api\/users\/User_Post[4:35]","start":1720699184939,"end":1720699185598,"title":"api\/users\/User_Post[4:35] 17:29:44.939-17:29:45.598 Post method for Login-Successfull"},{"id":14,"group":1,"content":"api\/users\/User_Post[5:43]","start":1720699185607,"end":1720699186215,"title":"api\/users\/User_Post[5:43] 17:29:45.607-17:29:46.215 Post method for Login-Unsuccessfull"},{"id":15,"group":1,"content":"api\/users\/User_Put[1:4]","start":1720699186377,"end":1720699187053,"title":"api\/users\/User_Put[1:4] 17:29:46.377-17:29:47.053 Update an existing passenger details"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

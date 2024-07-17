@@ -1,0 +1,17 @@
+package CoreJavaPkj;
+
+public class JavaLoops {
+	
+	public void PrintUsingFor() {
+		for(int i=1; i<=100; i++) {
+			System.out.print(i);
+		}
+	}
+
+	
+	
+	public void PrintUsingFor() {
+		
+		}
+
+}

@@ -1,0 +1,5 @@
+package com.maveric.restassurepojo.api;
+
+public class RegisterPojo {
+
+}

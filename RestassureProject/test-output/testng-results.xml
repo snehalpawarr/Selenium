@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-11T11:12:55 IST" name="Default suite" finished-at="2024-07-11T11:13:13 IST" duration-ms="18369">
+    <groups>
+    </groups>
+    <test started-at="2024-07-11T11:12:55 IST" name="Default test" finished-at="2024-07-11T11:13:13 IST" duration-ms="18369">
+      <class name="com.maveric.restassureproj.api.RestApiTest">
+        <test-method is-config="true" signature="setUpEnv()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:12:55 IST" name="setUpEnv" finished-at="2024-07-11T11:12:55 IST" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnv -->
+        <test-method signature="test1()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:12:55 IST" name="test1" finished-at="2024-07-11T11:12:57 IST" duration-ms="1580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test10()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:12:57 IST" name="test10" finished-at="2024-07-11T11:12:58 IST" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method signature="test11()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:12:58 IST" name="test11" finished-at="2024-07-11T11:13:00 IST" duration-ms="1349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method signature="test12()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:00 IST" name="test12" finished-at="2024-07-11T11:13:00 IST" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method signature="test13()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:00 IST" name="test13" finished-at="2024-07-11T11:13:01 IST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method signature="test14()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:01 IST" name="test14" finished-at="2024-07-11T11:13:02 IST" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method signature="test15()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:02 IST" name="test15" finished-at="2024-07-11T11:13:02 IST" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method signature="test2()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:02 IST" name="test2" finished-at="2024-07-11T11:13:03 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:03 IST" name="test3" finished-at="2024-07-11T11:13:04 IST" duration-ms="890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:04 IST" name="test4" finished-at="2024-07-11T11:13:04 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test5()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:04 IST" name="test5" finished-at="2024-07-11T11:13:04 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method signature="test6()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:04 IST" name="test6" finished-at="2024-07-11T11:13:05 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method signature="test7()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:05 IST" name="test7" finished-at="2024-07-11T11:13:12 IST" duration-ms="7420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method signature="test8()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:12 IST" name="test8" finished-at="2024-07-11T11:13:13 IST" duration-ms="721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method signature="test9()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:13 IST" name="test9" finished-at="2024-07-11T11:13:13 IST" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method is-config="true" signature="tearDownEnv()[pri:0, instance:com.maveric.restassureproj.api.RestApiTest@7526515b]" started-at="2024-07-11T11:13:13 IST" name="tearDownEnv" finished-at="2024-07-11T11:13:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownEnv -->
+      </class> <!-- com.maveric.restassureproj.api.RestApiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

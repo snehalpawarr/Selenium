@@ -1,0 +1,8 @@
+Feature: Testing DELETE Method for Users API
+
+@execute
+Scenario: Delete airline by ID
+    Given url baseURL
+    And path 'airlines/73dd5420-3bf9-48f3-a0b6-17cf7aa61b19'
+    When method DELETE
+    Then status 200

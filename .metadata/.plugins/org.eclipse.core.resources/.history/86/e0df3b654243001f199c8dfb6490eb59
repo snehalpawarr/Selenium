@@ -1,0 +1,9 @@
+Feature: Open New Account
+
+Scenario: Successfull account creation
+Given User is loged in to ParaBank homepage
+    When User navigate to the open new account page
+    And  enter valid registration details
+    And  submit the registration form
+    Then User should see a success message
+ 

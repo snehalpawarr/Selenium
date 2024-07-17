@@ -1,0 +1,53 @@
+package com.maveric.parabank.pagebeans;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class AccountCreationPageBeans {
+	
+	@FindBy( how = How.XPATH,  xpath = "//select[@id='type']")
+	private WebElement Dropdown;
+	
+	
+	@FindBy( how = How.XPATH,  xpath = "//input[@type='button']")
+	private WebElement submitBtn;
+	
+	
+	@FindBy( how = How.XPATH,  xpath = "//a[@id='newAccountId']")
+	private WebElement AcntNmbr;
+	
+	@FindBy( how = How.XPATH,  xpath = "//div[@id='openAccountResult']/p[1]")
+	private WebElement Message;
+	
+	
+	@FindBy( how = How.XPATH,  xpath = "//a[text()='Open New Account']")
+	private WebElement CreateAccount;
+	
+	
+	public void CreateAccount() {
+		CreateAccount.click();
+	}
+	
+	
+	public void SelectAccount() {
+		Dropdown.click();
+		Select slct = new Select(Dropdown);	
+		slct.selectByVisibleText("SAVINGS");
+	}
+	
+	public void Submit() {
+		submitBtn.submit();
+	}
+	
+	public void getAccountNo() {
+		AcntNmbr.getText();
+	}
+	
+	public void getMssg() {
+		Message.getText();
+	}
+	
+	
+}

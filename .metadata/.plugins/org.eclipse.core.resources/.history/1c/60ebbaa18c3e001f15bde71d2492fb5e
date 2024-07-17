@@ -1,0 +1,43 @@
+Feature: Online Fake API-Airlines-Get
+ 
+@execute
+Scenario: Get all user details
+Given url baseURL
+And path 'users'
+And param page = 2
+When method GET
+Then status 200
+
+@execute
+Scenario: Get specific user details by id
+Given url baseURL
+And path 'users/2'
+When method GET
+Then status 200
+#And Match response={{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}}}
+ 
+ 
+@execute
+Scenario: Get empty user details
+Given url baseURL
+And path 'users/23'
+When method GET
+Then status 404
+ 
+ 
+@execute
+Scenario: Get delaying user details
+Given url baseURL
+And path 'users'
+And param delay = 3
+When method GET
+Then status 200
+
+
+@execute
+Scenario: Get List of resources
+Given url baseURL
+And path 'unknown'
+When method GET
+Then status 200
+

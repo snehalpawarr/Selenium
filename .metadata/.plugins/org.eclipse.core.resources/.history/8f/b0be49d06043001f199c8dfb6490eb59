@@ -1,0 +1,41 @@
+package com.maveric.parabank.stepdeff;
+
+public class AccountCreationStepDeff {
+	
+	
+	@Given("User is loged in to ParaBank homepage")
+	public void user_is_loged_in_to_para_bank_homepage() {
+	    
+	    }
+
+	@When("User navigate to the open new account page")
+	public void user_navigate_to_the_open_new_account_page() {
+	   
+	}
+
+	@When("select Account type")
+	public void select_account_type() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("submit the request")
+	public void submit_the_request() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User should get the new account number")
+	public void user_should_get_the_new_account_number() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Successfull account creation message should be displayed")
+	public void successfull_account_creation_message_should_be_displayed() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

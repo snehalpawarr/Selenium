@@ -1,0 +1,6 @@
+package com.maveric.restassurepojo.api;
+
+public class LoginPojo {
+	String email,password;
+
+}
